@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Daria Petrova](https://up.htmlacademy.ru/htmlcss/20/user/637069).
-* Наставник: `Неизвестно`.
+* Наставник: [Магомед Кандаев](https://up.htmlacademy.ru/htmlcss/20/user/161600).
 
 ---
 
