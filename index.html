@@ -9,7 +9,7 @@
 		<!--<p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>-->
 
 		<!--Элемент "new" пока нигде не доавлен-->
-		<header class="main-header"></header>
+		<header class="main-header">
 			<div class="header-top">
 				<a class="logo-btn" href="#">
 					<!--Как понять это вообще логотип или кнопка с текстом? По мне, так кнопка с текстом-->
@@ -19,67 +19,77 @@
 				<form class="search">
 					<!--Здесь будет форма поиска-->
 				</form>
-				<a class="favourites" href="favourites.html">Закладки</a>
-				<a class="cart" href="cart.html">Корзина</a>
-				<a class="order-btn" href="make-order.html">Оформить заказ</a>
+				<section class="user-favourites">
+					<a class="favourites" href="favourites.html">Закладки</a>
+					<a class="cart" href="cart.html">Корзина</a>
+					<a class="order-btn" href="make-order.html">Оформить заказ</a>
+				</section>
 			</div>
-			<p class="technomart-description">
-				Интернет-магазин<br> 
-				строительных материалов<br>
-				и инструментов для ремонта
-			</p>
-			<a class="phone-btn" href="tel:+78125550555">
-				+7(812)555-05-55
-			</a>
-			<p>
-				г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
-			</p>
 			
-			<nav class="header-navigation">	
+			<section class="header-middle">
+				<p class="technomart-description">
+					Интернет-магазин<br> 
+					строительных материалов<br>
+					и инструментов для ремонта
+				</p>
+				<section class="company-contacts">
+					<a class="phone-btn" href="tel:+78125550555">
+						+7(812)555-05-55
+					</a>
+					<p>
+						г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
+					</p>
+				</section>
+			
 				<ul class="user-navigation">
 					<!--Как правильно?-->
 					<li><a class="sign-in-btn" href="#">Вход</a></li>
 					<!--<li class="login-link">Вход</li>-->
 					<li><a class="sign-up-btn" href="#">Регистрация</a></li>
 					<!--<li class="register-link">Регистрация</li>-->
-				</ul>		
-				<ul class="site-navigation">
-					<li><a href="index.html">Главная</a></li>
-					<li><a href="about-us.html">Компания</a></li>
-					<li><a href="catalog.html">Каталог</a></li>
-					<li><a href="news.html">Новости</a></li>
-					<li><a href="special-offers.html">Спецпредложения</a></li>
-					<li><a href="delievery.html">Доставка</a></li>
-					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
-			</nav>
+			</section>	
+			
+			<!--<nav class="header-navigation">-->	
+			<ul class="site-navigation">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="about-us.html">Компания</a></li>
+				<li><a href="catalog.html">Каталог</a></li>
+				<li><a href="news.html">Новости</a></li>
+				<li><a href="special-offers.html">Спецпредложения</a></li>
+				<li><a href="delievery.html">Доставка</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+			</ul>
+			<!--</nav>-->
 		</header>	
 			
 		<main class="container">
 			<h1 class="visually-hidden">Интернет-магазин "Техномарт"</h1> <!--Скроем в CSS-->
 			<section class="main-navigation">
-				<section class="materials">
-					<b>Материалы</b>
-					<a href="#">НА ЛЮБОЙ ВКУС</a>
-				</section>
-				<section class="instrument">
-					<b>Интсрумент</b>
-					<a href="#">НА ВСЕ СЛУЧАИ</a>
-				</section>
-				<section class="equipment">
-					<b>Интсрумент</b>
-					<a href="#">ДЛЯ СТРОЙКИ</a>
-				</section>	
-				<section class="sales">
-					<b>Интсрумент</b>
-					<a href="#">НА 350 ТОВАРОВ</a>
-				</section>	
-				<section class="delievery">
-					<b>Интсрумент</b>
-					<a href="#">БЕСПЛАТНО</a>
-				</section>
+				<ul class="main-page-content">
+					<li class="materials">
+						<b>Материалы</b>
+						<a href="#">НА ЛЮБОЙ ВКУС</a>
+					</li>
+					<li class="instrument">
+						<b>Интсрумент</b>
+						<a href="#">НА ВСЕ СЛУЧАИ</a>
+					</li>
+					<li class="equipment">
+						<b>Интсрумент</b>
+						<a href="#">ДЛЯ СТРОЙКИ</a>
+					</li>	
+					<li class="sales">
+						<b>Интсрумент</b>
+						<a href="#">НА 350 ТОВАРОВ</a>
+					</li>	
+					<li class="delievery">
+						<b>Интсрумент</b>
+						<a href="#">БЕСПЛАТНО</a>
+					</li>
+				</ul>
 				<section class="drills">
-					<b>ДРЕЛИ<br>Соселям на радость!</b>
+					<b>ДРЕЛИ<br>Соседям на радость!</b>
 					<a class="btn" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
 					<img src="img/worker.jpg" alt="Строитель">
 					<!--<span class="button gallery-button gallery-button-back">Назад</span>
@@ -88,8 +98,10 @@
 			</section>
 
 			<section class="popular-items">
-				<h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
-				<a class="btn" href="popular-items.html">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+				<div class="all-popular-items>">
+					<h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
+					<a class="btn" href="popular-items.html">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+				</div>
 				<ul class=catalog-list>
 					<li>
 						<a><img src="img/product-1.jpg" alt="Перфоратор BOSCH BFG 9000"></a>
@@ -131,8 +143,10 @@
 			</section>
 
 			<section class="popular-brands">
-				<h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
-				<a class="btn" href="brands-list.html">ВСЕ ПРОИЗВОДИТЕЛИ</a>
+				<div class="all-brands">
+					<h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
+					<a class="btn" href="brands-list.html">ВСЕ ПРОИЗВОДИТЕЛИ</a>
+				</div>
 				<ul class="brands-list">
 					<li class="brand-item">
 						<a href="bosch.html"><img src="img/bosch.logo" alt="Логотип фирмы Bosch"></a>
@@ -165,71 +179,72 @@
 				<h2>СЕРВИСЫ</h2>
 				<p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
 				Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-				<form class="service-description">
-					<input type="radio" name="service-type" value="delievery" id="point1">
-					<label for="point1">Доставка</label><br>
-					<input type="radio" name="service-type" value="guarantee" id="point2">
-					<label for="point1">Гарантия</label><br>
-					<input type="radio" name="service-type" value="credit" id="point3">
-					<label for="point3">Кредит</label>
-				</form>
-				<div class="delievery-descr">
-					<h2>Доставка</h2>
-					<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br>
-					Ведь мы неплохо заработаем,<br>
-					поднимая его на ваш этаж!
-					</p>
-				</div>
-				<div class="guarantee-descr">
-					<h2>Гарантия</h2>
-					<p>Если купленный у нас товар поломается или заискрит<br>
-						а также в случае пожара, спровоцированного его возгоранием,<br>
-						вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
-						сгоревший товар на новый.<br>
-						Дом уж восстановите как-нибудь сами.
-					</p>
-				</div>
-				<div class="credit-descr">
-					<h2>Кредит</h2>
-					<p>Залезть в долговую яму стало проще!<br>
-						Кредитные консультанты придут вам на помощь.
-					</p>
-					<a class="btn" href="">ОТПРАВИТЬ ЗАЯВКУ</a>
+				<div class="service-description">
+					<ul class="service-list">
+						<li class="service-list-item">Доставка</li>
+						<li class="service-list-item">Гарантия</li>
+						<li class="service-list-item">Оплата</li>
+					</ul>
+					<div class="delievery-descr">
+						<h2>Доставка</h2>
+						<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br>
+						Ведь мы неплохо заработаем,<br>
+						поднимая его на ваш этаж!
+						</p>
+					</div>
+					<div class="guarantee-descr">
+						<h2>Гарантия</h2>
+						<p>Если купленный у нас товар поломается или заискрит<br>
+							а также в случае пожара, спровоцированного его возгоранием,<br>
+							вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+							сгоревший товар на новый.<br>
+							Дом уж восстановите как-нибудь сами.
+						</p>
+					</div>
+					<div class="credit-descr">
+						<h2>Кредит</h2>
+						<p>Залезть в долговую яму стало проще!<br>
+							Кредитные консультанты придут вам на помощь.
+						</p>
+						<a class="btn" href="">ОТПРАВИТЬ ЗАЯВКУ</a>
+					</div>
 				</div>
 			</section>
-			
-			<section class="about-company">
-				<h2>КОМПАНИЯ "ТЕХНОМАРТ"</h2>
-				<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
-				<p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
-				<ul class="contributors">
-					<li class="contributor">Деловые линии</li>
-					<li class="contributor">Автотрейдинг</li>
-					<li class="contributor">ЖелДорЭкспедиция</li>
-				</ul>
-				<a class="btn" href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
-			</section>
+			<section class="header-bottom">
+				<section class="about-company">
+					<h2>КОМПАНИЯ "ТЕХНОМАРТ"</h2>
+					<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
+					<p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+					<ul class="contributors">
+						<li class="contributor">Деловые линии</li>
+						<li class="contributor">Автотрейдинг</li>
+						<li class="contributor">ЖелДорЭкспедиция</li>
+					</ul>
+					<a class="btn" href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
+				</section>
 
-			<section class="location">
-				<h2>КОНТАКТЫ</h2>
-				<p>Вы можете забрать товар сами, заехав в наш офис:</p>
-				<a class="map" href="/bigmap.html"><img src="img/minimap.jpg" alt="Уменьшенное изображение карты"></a>
-				<a class="btn" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+				<section class="location">
+					<h2>КОНТАКТЫ</h2>
+					<p>Вы можете забрать товар сами, заехав в наш офис:</p>
+					<a class="map" href="/bigmap.html"><img src="img/minimap.jpg" alt="Уменьшенное изображение карты"></a>
+					<a class="btn" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+				</section>
 			</section>
-
 		</main>
 		
 		<footer class="main-footer">
 			<section class="footer-top">
-				<a class="logo-btn" href="#">
-					<!--Как понять это вообще логотип или кнопка с текстом? По мне, так кнопка с текстом-->
-					<!--<img src="img/logo.png" alt="Логотип техномарта">-->
-						ТЕХНОМАРТ
-				</a>
-				<p class="contacts">
-					+7(812)555-05-55<br>
-					г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
-				</p>
+				<div class="company-address">
+					<a class="logo-btn" href="#">
+						<!--Как понять это вообще логотип или кнопка с текстом? По мне, так кнопка с текстом-->
+						<!--<img src="img/logo.png" alt="Логотип техномарта">-->
+							ТЕХНОМАРТ
+					</a>
+					<p class="contacts">
+						+7(812)555-05-55<br>
+						г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
+					</p>
+				</div>
 				<nav class="footer-navgation">
 					<ul class="footer-nav1">
 						<li><a href="#">Компания</a></li>
@@ -253,13 +268,13 @@
 					<b>© 2010-2017 Компания "Техномарт"<br>
 					Все права защищены</b>
 				</div>
-				<div class="footer-social">
-					<ul>
-						<li><a class="social-btn" href="#">Вконтакте</a></li>
-						<li><a class="social-btn" href="#">Фейсбук</a></li>
-						<li><a class="social-btn" href="#">Инстаграм</a></li>
-					</ul>
-				</div>
+				
+				<ul class="footer-social">
+					<li><a class="social-btn" href="#">Вконтакте</a></li>
+					<li><a class="social-btn" href="#">Фейсбук</a></li>
+					<li><a class="social-btn" href="#">Инстаграм</a></li>
+				</ul>
+			
 				<div class="footer-feedback">
 					<b>Обратная связь:</b>
 					<a class="email-btn" href="mail:mail@htmlacademy.ru">
