@@ -75,14 +75,20 @@
 			
 				<section class="catalog"><!--правая зелёная рамка на разметке--> 
 					<h2 class="visually-hissen">Список перфораторов</h2>
+					<div class="sort">
+						<p>Сортировка:</p>
+						<ul class="sort-types">
+							<li class="sort-type-current"><button class="sorting-btn">По цене</button></li>
+							<li><button class="sorting-btn">По типу</button></li>
+							<li><button class="sorting-btn">По функционалу</button></li>
+						</ul>
+						<ul class="sort-order">
+							<li class="sort-order-current"><button class="sorting-order-btn">По возрастанию</button></li>
+							<li><button class="sorting-order-btn">По убыванию</button></li>
+						</ul>
+					</div>
 
-					<p>Сортировка:</p>
-					<button class="sorting-btn">По цене</button>
-					<button class="sorting-btn">По типу</button>
-					<button class="sorting-btn">По функционалу</button>
-					<!--тут ещё 2 стрелочки справа от сортировки "По функционалу" имеется ввиду сортировка по возрастанию цены и её убыванию?-->
-					
-					<ul class=catalog-list>
+					<ul class="products-list">
 						<li>
 							<a><img src="img/product-1.jpg" alt="Перфоратор BOSCH BFG 3000"></a>
 							<h3>
