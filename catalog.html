@@ -18,6 +18,9 @@
 				</a>
 				<form class="search">
 					<!--Здесь будет форма поиска-->
+					<label for="page-srch">Поиск:</label>
+					<input type="search" id="page-srch" name="page-srch" />
+					<!--Форме поиска нужно делать отдельный сабмит и скрывать его?-->
 				</form>
 				<a class="favourites" href="">Закладки</a>
 				<a class="cart" href="">Корзина</a>
@@ -37,21 +40,23 @@
 			
 			<form class="user-form">
 				<!--Здесь будет форма пользователя, вошедшего в систему-->
-				<a class="user-preferencies-btn" href="#">!!!</a>
-				<a class="sign-out-btn" href="#">...</a>
+				<a class="user-preferencies-btn" href="#">Перейти в личный кабинет</a>
+				<p>Равшан Джамшутович</p> 
+				<a class="sign-out-btn" href="#">Выйти</a>
 			</form>
+			<!--Ссылкам с одинаковым оформлением задать одинаковое имя класса!!!!!-->
 			<a class="user-orders" href="">Мои заказы</a>
 			<a class="user-cabinet" href="">Личный кабинет</a>
 			<nav class="header-navigation">		
 				<ul class="site-navigation">
-					<li><a href="#">Главная</a></li>
-					<li><a href="#">Компания</a></li>
-					<li class="site-navigation-current"><a href="#">Каталог</a>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="about-us.html">Компания</a></li>
+					<li class="site-navigation-current"><a href="catalog.html">Каталог</a>
 					</li>
-					<li><a href="#">Новости</a></li>
-					<li><a href="#">Спецпредложения</a></li>
-					<li><a href="#">Доставка</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li><a href="news.html">Новости</a></li>
+					<li><a href="special-offers.html">Спецпредложения</a></li>
+					<li><a href="delievery.html">Доставка</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
 			</nav>
 
@@ -60,8 +65,8 @@
 		<main class="container">
 			<h1 class="catalog-header">Перфораторы</h1>
 			<ul class="breadcrumbs">
-				<li><a href="catalog.html">Главная</a></li>
-				<li><a href="instrument.html">Магазин</a></li>
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="catalog.html">Магазин</a></li>
 				<li class="breadcrumbs-current">Перфораторы</li>
 			</ul>
 
@@ -70,21 +75,61 @@
 				<section class="goods-filter"><!--левая зелёная рамка на разметке-->
 					<h2 class="visually-hidden">Фильтры каталога товаров</h2>
 					<p>Фильтр:</p>
-					<!-- Здесь будет форма -->
+					<form class="filter-form" action="/echo" method="post">
+						<div class="price-range">
+							<!--Как здесь правильно размечать?-->
+							<fieldset>
+								<legend>Цена:</legend>
+								<div class="price-indicator">Индикатор мин. цены</div>
+								<div class="price-indicator">Индикатор макс. цены</div>
+								<div class="price-indicator">Отрезок</div>
+
+								<!--<h2>Цена:<br></h2>
+								<input type="range" name="price" id="price" min="0" max="30000" step="1">-->
+								<!--<otput name="min-price"><output>
+								<otput name="max-price"><output>-->
+							<!--<hr>-->
+							</fieldset>
+						</div>
+						<div class="checkbox-area">
+							<!--Здесь название фильтрачерез заголовок или через филдсет лучше?-->
+							<fieldset>
+								<legend>Производители:</legend>
+							<!--<h2>Производители:</h2>-->
+							<!--<input type="checkbox" id="check2"><label for="check2">Ipsum</label><Br>-->
+								<input type="checkbox" id="brand1" name="brand1" value="bosch" checked /><label for="brand1">Bosch</label><br>
+								<input type="checkbox" id="brand2" name="brand2" value="interskol" /><label for="brand2">Интерскол</label><br>
+								<input type="checkbox" id="brand3" name="brand3" value="makita" checked /><label for="brand3">Makita</label><br>
+								<input type="checkbox" id="brand4" name="brand4" value="dewalt" /><label for="brand4">Dewalt</label><br>
+								<input type="checkbox" id="brand5" name="brand5" value="hitachi" /><label for="brand5">Hitachi</label><br>
+							<!--<hr>-->
+						</fieldset>
+						</div>
+						<div class="radiobutton-area">
+							<!--<h2>Питание:</h2>-->
+							<fieldset>
+								<legend>Питание:</legend>
+								<input type="radio" id="r1" name="group1" value="1" /><label for="r1">Аккумуляторные</label><br>
+								<input type="radio" id="r2" name="group1" value="2" checked /><label for="r2">Сетевые</label>
+						</fieldset>
+						</div>
+						<input type="submit" value="Показать" />
+					</form>
 				</section>
 
 			
 				<section class="catalog"><!--правая зелёная рамка на разметке--> 
 					<h2 class="visually-hidden">Каталог товаров</h2>
-					<h2 class="visually-hissen">Список перфораторов</h2>
 					<div class="sort">
 						<p>Сортировка:</p>
 						<ul class="sort-types">
+							<!--В вебинаре сказли, что это должны быть ссылки-->
 							<li class="sort-type-current"><button class="sorting-btn">По цене</button></li>
 							<li><button class="sorting-btn">По типу</button></li>
 							<li><button class="sorting-btn">По функционалу</button></li>
 						</ul>
 						<ul class="sort-order">
+							<!--Про это тоже сказали ссылки-->
 							<li class="sort-order-current"><button class="sorting-order-btn">По возрастанию</button></li>
 							<li><button class="sorting-order-btn">По убыванию</button></li>
 						</ul>
@@ -98,7 +143,7 @@
 								</a>
 							</h3>
 							<del>22500 Р.</del>
-							<a class="pointer-btn" href="#">15500 Р.</a>
+							<a class="pointer-btn" href="#">15500 Р.</a><!--Это ссылка или неинтерактивный элемент?-->
 							<p class="choice">
 								<a class="button" href="#">Купить</a>
 								<a class="button" href="#">В закладки</a>
@@ -231,7 +276,7 @@
 
 			<section class="footer-top">
 				<h2 class="visually-hidden">Навигация по сайту</h2>
-				<a class="logo-btn" href="#">
+				<a class="logo-btn" href="index.html">
 					<!--Как понять это вообще логотип или кнопка с текстом? По мне, так кнопка с текстом-->
 					<!--<img src="img/logo.png" alt="Логотип техномарта">-->
 						Техномарт
@@ -242,11 +287,11 @@
 				</p>
 				<nav class="footer-navgation">
 					<ul class="footer-nav1">
-						<li><a href="#">Компания</a></li>
-						<li><a href="#">Новости</a></li>
-						<li><a href="#">Каталог</a></li>
-						<li><a href="#">Доставка</a></li>
-						<li><a href="#">Контакты</a></li>
+						<li><a href="about-us.html">Компания</a></li>
+						<li><a href="news.html">Новости</a></li>
+						<li><a href="catalog.html">Каталог</a></li>
+						<li><a href="delievery.html">Доставка</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
 					</ul>
 				<!--2 списка, потому что в CSS у нах будет разная стилизация-->
 					<ul class="footer-nav2">
