@@ -1,0 +1,703 @@
+body { /*Глобальные стили главной страницы*/
+	margin: 0;
+	padding: 0;
+
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #ffffff;
+	text-transform: capitalize;
+
+	background-color: white;
+}
+.inner-page {/*Глобальные стили для страницы каталога*/
+	background-color: white;
+
+
+}
+
+a { /*общее для всех ссылок*/
+	text-decoration: none;
+}
+.main-header { /*фон хедера*/
+	background-color: #f3f7f9;
+}
+.header-top { /*общие для закладок, корзины и т.д.*/
+	font-size: 17px;
+	line-height: 18px;
+	background-color: #293449;
+}
+/*.header-top:hover {
+	background-color: #212a3a;
+}*/
+.header-middle { /*фон средней части хедера*/
+	background-color: #f3f7f9;
+}
+.logo-btn { /*кнопка ТЕХНОМАРТ в хедере*/
+	font-size: 24px;
+	line-height: 24px;
+	text-transform: uppercase;
+
+	/*width: 220px;
+	height: 47px;*/
+	background-color: #ee3643;
+}
+.logo-btn:hover { /*кнопка ТЕХНОМАРТ в хедере наведение*/
+	background-color: #ca2c37;
+}
+.logo-btn:active { /*кнопка ТЕХНОМАРТ в хедере клик*/
+	background-color: #ba2732;
+}
+.search:hover, .favourites:hover, .cart:hover {
+	/*Форма поиска, Закладки, Корзина в наведении*/
+	background-color: #212a3a;
+}
+.favourites:active, .cart:active {
+	/*Закладки, Корзина при клике*/
+	background-color: #161d29;
+}
+.search:focus {
+	/*Форма поиска в фокусе*/
+	background-color: white;
+}
+.user-favourites {
+	/*стили для: Закладки, Корзина, Оформить заказ*/
+	list-style: none;
+	background-color: #32425c;
+}
+.user-favourites a {
+	/*ссфлки в: Закладки, Корзина, Оформить заказ*/
+	color: white;
+}
+.order-btn {
+	/*кнопка Оформить заказ в покое*/
+	background-color: #63a63e;
+}
+.order-btn:hover {
+	/*кнопка Оформить заказ при наведении*/
+	background-color: #5fbb2d;
+}
+.order-btn:active {
+	/*кнопка Оформить заказ при клике*/
+	background-color: #518534;
+}
+.technomart-description {
+	/*красный текст в середине хедера*/
+	font-size: 16px;
+	line-height: 23px;
+	font-style: italic;
+	color: #ee3643;
+	text-transform: none;
+}
+.company-contacts {
+	/*контакты компании в середине хедера*/
+	font-size: 14px;
+	line-height: 24px;
+	color: #32425c;
+}
+.phone-btn {
+	/*номер телефона в середине хедера*/
+	font-size: 21px;
+	line-height: 21px;
+	color: #ee3643;
+}
+.user-navigation {
+	/*стили для входа и регистрации*/
+	list-style: none;
+}
+.sign-in-btn, .sign-up-btn {
+	/*кнопки фхода в систему и регистрации в покое*/
+	font-size: 21px;
+	line-height: 21px;
+	color: black;
+
+	background-color: white;
+}
+.sign-in-btn:hover, .sign-up-btn:hover {
+	/*кнопки фхода в систему и регистрации при наведении*/
+	color: #ee3643;
+}
+.sign-in-btn:active, .sign-up-btn:active {
+	/*кнопки фхода в систему и регистрации при клике*/
+	color: black;
+	opacity: 0.3;
+}
+.site-navigation {
+	/*навигация в хедере общие стили*/
+	font-size: 17px;
+	line-height: 17px;
+	list-style: none;
+
+	background-color: #f4f7f9;
+	background-image: url("img/background.jpg");
+	background-repeat: repeat;
+}
+.site-navigation a {
+	/*навигация в хедере стили для ссылок в покое*/
+	color: white;
+	background-color: #32425c;
+}
+.site-navigation a:hover {
+	/*навигация в хедере стили для ссылок при наведении*/
+	color: white;
+	background-color: #293449;
+}
+.site-navigation a:active {
+	/*навигация в хедере стили для ссылок при клике*/
+	color: rgba(255, 255, 255, 0.5);
+	background-color: #1d2739;
+}
+.main-page-content {
+	list-style: none;
+}
+.main-page-content b {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 30px;
+}
+.main-page-content a {
+	font-size: 14px;
+	line-height: 18px;
+	color: white;
+	text-transform: uppercase;
+}
+.main-page-content .materials {
+	background-color: #ffbf47;
+	background-image: url("img/icon-1.svg"), url("img/new_flag.png");
+	background-repeat: no-repeat;
+}
+.main-page-content .instrument {
+	background-color: #3bbce3;
+	background-image: url("img/icon-2.svg");
+	background-repeat: no-repeat;
+}
+.main-page-content .equipment {
+	background-color: #dc91d8;
+	background-image: url("img/icon-3.svg");
+	background-repeat: no-repeat;
+}
+.main-page-content .sales {
+	background-color: #8ed78f;
+	background-image: url("img/icon-4.svg");
+	background-repeat: no-repeat;
+}
+.main-page-content .delievery {
+	background-color: #ffc047;
+	background-image: url("img/icon-5.svg");
+	background-repeat: no-repeat;
+}
+/*.main-page-content .materials .transparent-btn {
+	background-color: rgba(229, 172, 64, 0.9)
+}
+.main-page-content .instrument .transparent-btn {
+	background-color: rgba(53, 169, 204, 0.9)
+}
+.main-page-content .equipment .transparent-btn {
+	background-color: rgba(198, 130, 194, 0.9)
+}
+.main-page-content .sales .transparent-btn {
+	background-color: rgba(128, 193, 128, 0.9)
+}
+.main-page-content .delievery .transparent-btn {
+	background-color: rgba(229, 172, 64, 0.9)
+}*/
+.main-page-content .transparent-btn {
+	/*полупрозрачные кнопки в главной части страницы в покое*/
+	background-color: rgba(0,0,0,0.1);
+	/*opacity: 0.1;*/
+	color: white;
+}
+.main-page-content .transparent-btn:hover {
+	/*полупрозрачные кнопки в главной части страницы при наведении*/
+	/*background-color: #cccccc;*/
+	background-color: rgba(0,0,0,0.2);
+}
+.main-page-content .transparent-btn:active {
+	/*полупрозрачные кнопки в главной части страницы при клике*/
+	/*background-color: #b2b2b2;*/
+	background-color: rgba(0,0,0,0.3);
+}
+.drills p {
+	/*текст в слайдере*/
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.drills b {
+	/*текст в слайдере*/
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: none;
+}
+.drills .extra-font {
+	/*текст во втором слайдере*/
+	font-family: "PT Sans", "Arial", sans-serif;
+}
+.btn {
+	/*стили для красных кнопок в покое*/
+	font-size: 14px;
+	line-height: 18px;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	background-color: #ee3643;
+}
+.btn:hover {
+	/*стили для красных кнопок при наведении*/
+	background-color: #ca2c37;
+}
+.btn:active {
+	/*стили для красных кнопок при клике*/
+	background-color: #ba2732;
+}
+.all-popular-items, 
+.all-brands {
+	/*стили для: Популярные товары, Популярные прозводители*/
+	/*Почему цвет фона не применяется к этому классу,
+	а работает только для popular-items? а к .all-brands применяется???*/
+	background-color: #f9f5f0;
+	/*background-image: url("img/background.jpg");
+	background-repeat: repeat;*/
+}
+
+h2 {
+	/*стили для заголовков второго уровня*/
+	/*Разве нельзя задать стилизацию для
+	всех заголовков h2 не через каскад или классы?*/
+	font-size: 30px;
+	line-height: 30px;
+	color: black;
+	font-weight: normal;
+	text-transform: uppercase;
+
+	/*background-color: #f9f5f0;
+	background-image: url("img/background.jpg");
+	background-repeat: repeat;*/
+
+}
+.all-popular-items h2, 
+.all-brands h2, 
+.catalog-header {
+	color: #32425c;
+	text-transform: uppercase;
+}
+.catalog-list,
+.products-list {
+	/*перечень популярных товаров*/
+	background-color: white;
+}
+.catalog-list a,
+.products-list a {
+	/*сссылки в перечне популярных товаров*/
+	text-decoration: none;
+	color: black;
+}
+.catalog-list a h3,
+.products-list h3 {
+	/*заголовки в сссылках в перечне популярных товаров*/
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: bold;
+	color: black;
+}
+.catalog-list a del,
+.products-list del {
+	/*старая цена в сссылках в перечне популярных товаров*/
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: bold;
+	color: #a9a9a9;
+}
+.catalog-list .price,
+.products-list .price {
+	/*новая цена в перечне популярных товаров*/
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: bold;
+	color: white;
+
+	background-color: #ee3643;
+	background-image: url("img/red-button.svg"), url("img/new_flag.png");
+	background-repeat: no-repeat;
+}
+.brands-list {
+	/*список популярных производителей*/
+	list-style: none;
+	background: white;
+}
+.brands-list .brand-item:hover {
+	/*box-shadow:*/
+}
+.brands-list .brand-item:active {
+	opacity: 0.3;
+}
+.services-list {
+	/*секция Сервисы*/
+	background-color: #f4f7f9;
+	background-image: url("img/background.jpg");
+	background-repeat: repeat;
+}
+.services-list h3 {
+	/*заголовки 3го уровня в секции Сервисы*/
+	font-size: 36px;
+	line-height: 36px;
+	text-transform: uppercase;
+	color: #32425c;
+}
+.services-list h2 {
+	/*заголовки 2го уровня в секции Сервисы*/
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: black;
+}
+.services-list p, .about-company p, 
+.location p, .inner-page .about p {
+	/*абзацы в сервисах и нижней части мэйна*/
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	color: black;
+	text-transform: none;
+}
+.service-list li {
+	/*стили для переключателя в Сервисах в покое*/
+	list-style: none;
+	font-size: 21px;
+	line-height: 30px;
+	font-weight: bold;
+	color: white;
+	background-color: #32425c;
+}
+.service-list li:hover {
+	/*стили для переключателя в Сервисах принаведении*/
+
+	/*list-style: none;
+	font-size: 21px;
+	line-height: 30px;
+	font-weight: bold;
+	color: white;*/
+	background-color: #293449;
+}
+.service-list .service-list-item:active /*здесь active или focus*/ { 
+	/*стили для переключателя в Сервисах при нажатии*/
+
+	/*list-style: none;
+	font-size: 21px;
+	line-height: 30px;
+	font-weight: bold;*/
+	color: #32425c;
+	background-color: white;
+}
+.header-bottom {
+	/*Компания "Техномарт" и Контакты внизу мэйна*/
+	background-color: white;
+}
+.header-bottom .contributors {
+	/*Перечень транспортных коспаний*/
+	list-style: none;
+	font-size: 18px;
+	line-height: 20px;
+	color: black;
+}
+.main-footer {
+	/*стили для футера главной страницы*/
+	background-color: #32425c;
+}
+.main-footer .company-address .logo-btn {
+	/*стили для кнопки Техномарт в футере*/
+	font-size: 30px;
+	line-height: 30px;
+}
+.main-footer .company-address .contacts {
+	/*стили для адреса компании в футере*/
+	color: #f3f7f9;
+}
+.main-footer .footer-navigation .footer-nav1, 
+.footer-nav2 {
+	/*навигация в футере стили для списков*/
+	list-style: none;
+}
+.main-footer .footer-navigation .footer-nav1 a {
+	/*навигация1 в футере стили для ссылок в покое*/
+	color: #f3f7f9;
+}
+.main-footer .footer-navigation .footer-nav1 a:hover,  
+.footer-nav2 a:hover{
+	/*навигация в футере стили для ссылок при наведении*/
+	text-decoration: underline;
+}
+.main-footer .footer-navigation .footer-nav1 a:active,  
+.footer-nav2 a:active{
+	/*навигация в футере стили для ссылок при нажатии*/
+	opacity: 0.5;
+	text-decoration: none;
+}
+
+.main-footer .footer-navigation .footer-nav2 a {
+	/*навигация2 в футере стили для ссылок в покое*/
+	color: #ffd180;
+}
+.main-footer .footer-bottom .footer-copyright, 
+.footer-feedback, .developer {
+	/*стили внизу подвала*/
+	font-size: 16px;
+	line-height: 18px;
+}
+.main-footer .footer-bottom .footer-social {
+	/*Почему это правило не работает для каталога????*/
+	list-style: none;
+}
+.footer-social li {
+	background-color: #212a3a;
+}
+.footer-social li:hover,
+.footer-social li:active {
+	background-color: #ee3643;
+}
+.main-footer .email-btn, 
+.developer-address-btn {
+	/*контакты для обратной связи в покое*/
+	text-transform: lowercase;
+	color: #ffd180;
+}
+.main-footer .email-btn:hover, 
+.developer-address-btn:hover {
+	/*контакты для обратной связи при наведении*/
+	text-decoration: underline;
+}
+.main-footer .email-btn:active, 
+.developer-address-btn:active {
+	/*контакты для обратной связи при нажатии*/
+	color: #ee3643;
+	/*при клике ссылка становится красной, но подчеркивание остается*/
+	text-decoration: none;
+}
+.modal-write-us .feedback-form {
+	/*контакты для обратной связи при наведении*/
+	font-size: 18px;
+	line-height: 18px;
+	text-transform: none;
+	color: black;
+}
+/*Стилизация каталога (отличающиеся блоки)*/
+.user-form {
+	color: black;
+	background-color: white;
+}
+.user-form p { /*Имя пользователя*/
+	color: black;
+	background-color: white;
+	font-size: 21px;
+	line-height: 21px;
+}
+.user-form p:active {
+	opacity: 0.3;
+}
+.user-form a { /*Варианты действий пользователя*/
+	display: none;
+	color: #c5c5c5;
+}
+.user-form a:hover { /*Варианты действий пользователя*/
+	display: none;
+	color: #32425c;
+}
+.user-form a:active { /*Варианты действий пользователя*/
+	display: none;
+	color: rgba(0,0,0,0.3);
+}
+.user-orders, .user-cabinet { /*ссылки Мои заказы и Личный кабинет*/
+	color: #32425c;
+	font-size: 16px;
+	line-height: : 21px;
+	text-transform: none;
+	text-decoration: underline;
+}
+.user-orders:hover, .user-cabinet:hover { 
+	/*ссылки Мои заказы и Личный кабинет*/
+	color: #ee3643;
+}
+.user-orders:active, .user-cabinet:active { 
+	/*ссылки Мои заказы и Личный кабинет*/
+	color: rgba(50,66,92,0.3);
+}
+
+.breadcrumbs, .goods-filter p, 
+.sort .sort-types, .sort p, .sort-order { 
+	/*Хлебные крошки + фильтр и сортировка*/
+	list-style: none;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: black;
+	text-transform: uppercase;
+
+}
+.breadcrumbs a {
+	color: inherit;
+	text-decoration: none;
+}
+.goods-filter p, .sort p {
+	color: black;
+}
+.sort, .goods-filter p {
+	background-color: #f7f3ec;
+}
+.sort .sort-types  .sorting-btn, 
+.sort-order .sorting-order-btn {
+	/*Так все-таки кнопки или ссылки?!*/
+	opacity: 0.3;
+	text-transform: uppercase;
+	border-bottom: 1px dotted #ee3643;
+}
+.sort .sort-types .sorting-btn:hover, 
+.sort-order .sorting-order-btn:hover {
+	opacity: 1;
+	border-bottom: 1px solid #ee3643;
+}
+.sort .sort-types .sorting-btn:active, 
+.sort-order .sorting-order-btn:active {
+	opacity: 1;
+	color: #ee3643;
+	border-bottom: none;
+}
+.filter-form  {
+	 /*Форма с фильтрами*/
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	color: black;
+	text-transform: uppercase;	
+}
+.filter-form legend {
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 30px;
+}
+.filter-form .price-range {
+	/*Пока нет стилей для этого раздела*/
+}
+.filter-form input[type="submit"] {
+	/*Кнопка Показать в форме*/
+	font-family: inherit;
+	font-size: 13px;
+	line-height: 28px;
+	color: inherit;
+	text-transform: inherit;
+}
+.filter-form input[type="radio"]:hover,
+.filter-form input[type="checkbox"]:hover {
+	/*изменяется только цвет картинки*/
+}
+.filter-form input[type="radio"]:disabled,
+.filter-form input[type="checkbox"]:disabled {
+	/*Как сделать, чтобы текст лэйбла тоже становился полупрозрачным?!*/
+	/*color: rgba(0,0,0,0.4);*/
+	opacity: 0.4;
+}
+.products-list .choice {
+	/*стилизуем кнопки Купить и В закладки*/
+	width: 135px;
+	height: 38px;
+}
+.choice a {
+	font-size: 14px;
+	line-height: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.products-list .button-buy {
+	color: white;
+	background-color: #63a63e;
+	background-image: url("img/icon-cart.svg");
+	background-repeat: no-repeat;
+}
+.products-list .button-buy:hover {
+	background-color: #5fbb2d;
+}
+.products-list .button-buy:active {
+	background-color: #518534;
+}
+.products-list .button-save {
+	color: black;
+	background-color: white;
+	border: 2px solid #63a63e;
+}
+.products-list .button-save:hover {
+	border: 2px solid #32345c;
+}
+.products-list .button-save:active {
+	color: rgba(0,0,0,0.3);
+	border: 2px solid #c1c6ce;
+}
+.pagination-list {
+	/*нумерация страниц (см. курсы)*/
+	list-style: none;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: black;
+	text-transform: uppercase;	
+}
+.pagination-list li {
+	width: 38px;
+	height: 38px;
+	border: 1px solid #e5e5e5;
+	text-align: center;
+	vertical-align: middle;
+}
+.pagination-list a {
+	text-decoration: none;
+	color: inherit;
+}
+.pagination-list li:nth-child(4) {
+	width: 140px;
+	height: 38px;
+	text-decoration: none;
+	color: inherit;
+	border: 1px solid #e5e5e5;
+}
+.pagination-list li:hover {
+	border: 1px solid #bdc6ca;
+}
+.pagination-list li:active {
+	border: 1px solid #ee3643;
+}
+.pagination-list .pagination-current {
+	background-color: #ee3643;
+}
+.modal-order {
+	/*Там одна кнопка красная, другая белая, или при наведении меняются?*/
+	background-color: #f1f1f1;
+	border-top: 4px solid #ee3643;
+}
+.modal-order p {
+	font-size: 30px;
+	line-height: 30px;
+	color: black;
+	text-transform: none;
+	background-color: white;
+
+}
+.modal-order .btn-continue {
+	font-size: 14px;
+	line-height: 18px;
+	color: black;
+	text-transform: uppercase;
+	background-color: white;
+}
+
+
+
+
+
+
+
+
