@@ -13,8 +13,6 @@ body { /*Глобальные стили главной страницы*/
 }
 .inner-page {/*Глобальные стили для страницы каталога*/
 	background-color: white;
-
-
 }
 
 a { /*общее для всех ссылок*/
@@ -38,7 +36,7 @@ a { /*общее для всех ссылок*/
 	font-size: 24px;
 	line-height: 24px;
 	text-transform: uppercase;
-
+	color: white;
 	/*width: 220px;
 	height: 47px;*/
 	background-color: #ee3643;
@@ -49,6 +47,22 @@ a { /*общее для всех ссылок*/
 .logo-btn:active { /*кнопка ТЕХНОМАРТ в хедере клик*/
 	background-color: #ba2732;
 }
+.user-favourites {
+	/*стили для: Закладки, Корзина, Оформить заказ*/
+	list-style: none;
+	background-color: #293449;
+	/*background-color: #32425c;*/
+}
+.user-favourites a {
+	/*ссфлки в: Закладки, Корзина, Оформить заказ*/
+	color: white;
+}
+/*!!!!!!!!!!!!!!!!!!!!*/
+.search, .favourites, .cart {
+	/*Форма поиска, Закладки, Корзина в наведении*/
+	background-color: #293449;
+}
+/*!!!!!!!!!!!!!!!!!!!!*/
 .search:hover, .favourites:hover, .cart:hover {
 	/*Форма поиска, Закладки, Корзина в наведении*/
 	background-color: #212a3a;
@@ -56,19 +70,15 @@ a { /*общее для всех ссылок*/
 .favourites:active, .cart:active {
 	/*Закладки, Корзина при клике*/
 	background-color: #161d29;
+	opacity: 0.6;
 }
 .search:focus {
 	/*Форма поиска в фокусе*/
 	background-color: white;
 }
-.user-favourites {
-	/*стили для: Закладки, Корзина, Оформить заказ*/
-	list-style: none;
-	background-color: #32425c;
-}
-.user-favourites a {
-	/*ссфлки в: Закладки, Корзина, Оформить заказ*/
-	color: white;
+
+.user-favourites .full-cart {
+	background-color: #ee3643;
 }
 .order-btn {
 	/*кнопка Оформить заказ в покое*/
@@ -81,6 +91,7 @@ a { /*общее для всех ссылок*/
 .order-btn:active {
 	/*кнопка Оформить заказ при клике*/
 	background-color: #518534;
+	color: rgba(255,255,255,0.6);
 }
 .technomart-description {
 	/*красный текст в середине хедера*/
@@ -386,7 +397,7 @@ h2 {
 	color: white;*/
 	background-color: #293449;
 }
-.service-list .service-list-item:active /*здесь active или focus*/ { 
+.service-list .service-list-item:active/*здесь active или focus*/ { 
 	/*стили для переключателя в Сервисах при нажатии*/
 
 	/*list-style: none;
@@ -550,24 +561,38 @@ h2 {
 .sort, .goods-filter p {
 	background-color: #f7f3ec;
 }
-.sort .sort-types  .sorting-btn, 
-.sort-order .sorting-order-btn {
+.sorting-btn.sort-type-current,
+.sorting-order-btn.order-current {
+	color: #ee3643;
+	opacity: 1;
+	border: none;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.sorting-btn, 
+.sorting-order-btn {
 	/*Так все-таки кнопки или ссылки?!*/
 	opacity: 0.3;
 	text-transform: uppercase;
 	border-bottom: 1px dotted #ee3643;
 }
-.sort .sort-types .sorting-btn:hover, 
-.sort-order .sorting-order-btn:hover {
+.sorting-btn:hover, 
+.sorting-order-btn:hover {
 	opacity: 1;
+	color: black;
 	border-bottom: 1px solid #ee3643;
 }
-.sort .sort-types .sorting-btn:active, 
-.sort-order .sorting-order-btn:active {
+.sorting-btn:active, 
+.sorting-order-btn:active {
 	opacity: 1;
 	color: #ee3643;
 	border-bottom: none;
 }
+/*.sort-type-current a, .sort-order-current a {
+	color: #ee3643;
+	opacity: 1;
+	border: none;
+}*/
 .filter-form  {
 	 /*Форма с фильтрами*/
 	font-family: "PT Sans", "Arial", sans-serif;
@@ -693,6 +718,8 @@ h2 {
 	text-transform: uppercase;
 	background-color: white;
 }
+
+/*--------Сеточные стили---------*/
 
 
 

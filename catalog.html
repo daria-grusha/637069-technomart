@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Каталог интернет-магазина Техномарт</title>
-		<!-- нестандартные шрифты подключать здесь-->
 		<link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
@@ -24,45 +23,56 @@
 					<!--Здесь будет форма поиска-->
 					<label for="page-srch">Поиск:</label>
 					<input type="search" id="page-srch" name="page-srch" />
+					<input class="visually-hidden" type="submit" value="Искать">
 					<!--Форме поиска нужно делать отдельный сабмит и скрывать его?-->
 				</form>
-				<a class="favourites" href="">Закладки</a>
-				<a class="cart" href="">Корзина</a>
-				<a class="order-btn" href="#">Оформить заказ</a>
-			</div>
-			<p class="technomart-description">
-				Интернет-магазин<br> 
-				строительных материалов<br>
-				и инструментов для ремонта
-			</p>
-			<a class="phone-btn" href="tel:+78125550555">
-				+7(812)555-05-55
-			</a>
-			<p>
-				г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
-			</p>
-			
-			<form class="user-form">
-				<!--Здесь будет форма пользователя, вошедшего в систему-->
-				<a class="user-preferencies-btn" href="#">Перейти в личный кабинет</a>
-				<p>Равшан Джамшутович</p> 
-				<a class="sign-out-btn" href="#">Выйти</a>
-			</form>
-			<!--Ссылкам с одинаковым оформлением задать одинаковое имя класса!!!!!-->
-			<a class="user-orders" href="">Мои заказы</a>
-			<a class="user-cabinet" href="">Личный кабинет</a>
-			<nav class="header-navigation">		
-				<ul class="site-navigation">
-					<li><a href="index.html">Главная</a></li>
-					<li><a href="about-us.html">Компания</a></li>
-					<li class="site-navigation-current"><a href="catalog.html">Каталог</a>
-					</li>
-					<li><a href="news.html">Новости</a></li>
-					<li><a href="special-offers.html">Спецпредложения</a></li>
-					<li><a href="delievery.html">Доставка</a></li>
-					<li><a href="contacts.html">Контакты</a></li>
+				<ul class="user-favourites">
+					<li><a class="favourites" href="favourites.html">Закладки: 0</a></li>
+					<li><a class="cart full-cart" href="cart.html">Корзина: 10</a></li>
+					<li><a class="order-btn" href="make-order.html">Оформить заказ</a></li>
 				</ul>
-			</nav>
+				<!--<a class="favourites" href="">Закладки</a>
+				<a class="cart" href="">Корзина</a>
+				<a class="order-btn" href="#">Оформить заказ</a>-->
+			</div>
+
+			<section class="header-middle">
+				<h2 class="visually-hidden">Описание компании и контакты</h2>
+				<p class="technomart-description">
+					Интернет-магазин<br> 
+					строительных материалов<br>
+					и инструментов для ремонта
+				</p>
+				<p class="company-contacts">
+					<!--А ссылка ли это вообще? Из styleguide создается впечатление, что нет-->
+					<a class="phone-btn" href="tel:+78125550555">
+						+7(812)555-05-55
+					</a><br>
+					г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
+				</p>
+				
+				<form class="user-form">
+					<!--Здесь будет форма пользователя, вошедшего в систему-->
+					<a class="btn user-preferencies-btn" href="#">Перейти в личный кабинет</a>
+					<p>Равшан Джамшутович</p> 
+					<a class="btn sign-out-btn" href="#">Выйти</a>
+				</form>
+				<!--Ссылкам с одинаковым оформлением задать одинаковое имя класса!!!!!-->
+				<a class="user-orders" href="">Мои заказы</a>
+				<a class="user-cabinet" href="">Личный кабинет</a>
+			</section>
+			<!--<nav class="header-navigation">-->		
+			<ul class="site-navigation">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="about-us.html">Компания</a></li>
+				<li class="site-navigation-current"><a href="catalog.html">Каталог</a>
+				</li>
+				<li><a href="news.html">Новости</a></li>
+				<li><a href="special-offers.html">Спецпредложения</a></li>
+				<li><a href="delievery.html">Доставка</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+			</ul>
+			<!--</nav>-->
 
 		</header>	
 			
@@ -128,14 +138,14 @@
 						<p>Сортировка:</p>
 						<ul class="sort-types">
 							<!--В вебинаре сказли, что это должны быть ссылки-->
-							<li class="sort-type-current"><button class="sorting-btn">По цене</button></li>
-							<li><button class="sorting-btn">По типу</button></li>
-							<li><button class="sorting-btn">По функционалу</button></li>
+							<li><a class="sorting-btn sort-type-current">По цене</a></li>
+							<li><a class="sorting-btn">По типу</a></li>
+							<li><a class="sorting-btn">По функционалу</a></li>
 						</ul>
 						<ul class="sort-order">
 							<!--Про это тоже сказали ссылки-->
-							<li class="sort-order-current"><button class="sorting-order-btn">По возрастанию</button></li>
-							<li><button class="sorting-order-btn">По убыванию</button></li>
+							<li><a class="sorting-order-btn order-current">По возрастанию</a></li>
+							<li><a class="sorting-order-btn">По убыванию</a></li>
 						</ul>
 					</div>
 
@@ -286,19 +296,20 @@
 		</main>
 		
 		<footer class="main-footer">
-
 			<section class="footer-top">
 				<h2 class="visually-hidden">Навигация по сайту</h2>
-				<a class="logo-btn" href="index.html">
-					<!--Как понять это вообще логотип или кнопка с текстом? По мне, так кнопка с текстом-->
-					<!--<img src="img/logo.png" alt="Логотип техномарта">-->
-						Техномарт
-				</a>
-				<p class="contacts">
-					г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8<br>
-					+7(812)555-05-55
-				</p>
-				<nav class="footer-navgation">
+				<div class="company-address">
+					<a class="logo-btn" href="index.html">
+						<!--Как понять это вообще логотип или кнопка с текстом? По мне, так кнопка с текстом-->
+						<!--<img src="img/logo.png" alt="Логотип техномарта">-->
+							Техномарт
+					</a>
+					<p class="contacts">
+						г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8<br>
+						+7(812)555-05-55
+					</p>
+				</div>
+				<nav class="footer-navigation">
 					<ul class="footer-nav1">
 						<li><a href="about-us.html">Компания</a></li>
 						<li><a href="news.html">Новости</a></li>
@@ -322,13 +333,13 @@
 					<b>© 2010-2017 Компания "Техномарт"<br>
 					Все права защищены</b>
 				</div>
-				<div class="footer-social">
-					<ul>
-						<li><a class="social-btn" href="#">Вконтакте</a></li>
-						<li><a class="social-btn" href="#">Фейсбук</a></li>
-						<li><a class="social-btn" href="#">Инстаграм</a></li>
-					</ul>
-				</div>
+
+				<ul class="footer-social">
+					<li><a class="social-btn" href="#">Вконтакте</a></li>
+					<li><a class="social-btn" href="#">Фейсбук</a></li>
+					<li><a class="social-btn" href="#">Инстаграм</a></li>
+				</ul>
+
 				<div class="footer-feedback">
 					<b>Обратная связь:</b>
 					<a class="email-btn" href="mail:mail@htmlacademy.ru">
