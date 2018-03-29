@@ -407,6 +407,10 @@ h2 {
 	color: #32425c;
 	background-color: white;
 }
+.service-list-item.active-item {
+	background-color: white;
+	color: #32425c;
+}
 .header-bottom {
 	/*Компания "Техномарт" и Контакты внизу мэйна*/
 	background-color: white;
@@ -720,10 +724,505 @@ h2 {
 }
 
 /*--------Сеточные стили---------*/
+html, 
+body {
+	min-width: 1050px;
+	min-height: 1351px;
+}
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.main-header {
+	margin-bottom: 60px;
+	min-height: 320px;
+
+	/*outline: 3px solid yellow;
+	background-color: yellow;*/
+}
+.header-top-wrapper {
+	width: 100%;
+	background-color: #293449;
+
+	margin-bottom: 0;
+	min-height: 42px;
+}
+/*.header-top-wrapper .container {
+	display: flex;
+	justify-content: space-between;
+}*/
+
+.header-top {
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+
+	/*margin: 0;
+	padding: 0;
+	width: 940px;*/
+
+	list-style: none;
+
+	min-height: 42px;
+
+	outline: 3px solid yellow;
+}
+.logo-btn{
+	margin: 0;
+	padding: 0;
+
+	min-height: 42px;
+	width: 220px;
+}
+.search{
+	margin: 0;
+	padding: 0;
+	
+	min-height: 42px;
+	width: 270px;
+}
+.user-favourites{
+	margin: 0;
+	padding: 0;
+	
+	min-height: 42px;
+	width: 450px;
+}
 
 
+.header-middle { 
+	/*почему элементы не выстраиваются в ряд, а идут друг под другом?*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/*margin: 0;
+	padding: 0;
+	width: 940px;*/
+
+	list-style: none;
+
+	min-height: 158px;
+
+	outline: 3px solid green;
+}
+.technomart-description{
+	margin: 0;
+	padding: 0;
+
+	width: 196px;
+	min-height: 63px;
+	outline: 3px solid yellow;
+}
+.company-contacts{
+	margin: 0;
+	padding: 0;
+
+	width: 270px;
+	min-height: 68px;
+}
+.user-navigation{
+	margin: 0;
+	padding: 0;
+
+	width: 280px;
+	min-height: 45px;
+}
+
+.site-navigation {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	list-style: none;
+
+	min-height: 60px;
+
+	outline: 3px solid red;
+}
+.site-navigation a {
+	margin: 0;
+	padding: 0;
+
+	width: 940px;
+	min-height: 60px;
+}
+
+/*.main-navigation {
+	margin-bottom: 53px;
+	min-height: 410px;
+
+	outline: 3px solid yellow;
+}
+.main-page-content {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}*/
+.main-navigation {
+	display: flex;
+	flex-direction: column;
+}
+/*!!!!!!!!!!!!!!!!!!!!!!*/
+/*Временно спрячем второй слайд*/
+.slide-2 {
+	display: none;
+}
+/*!!!!!!!!!!!!!!!!!!!!!!*/
+.main-page-content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/*align-items: flex-end;*/
+	justify-content: flex-end;
+	align-content: stretch;
+}
+
+.main-page-content li {
+	min-height: 123px;
+	width: 300px;
+}
+/*.main-page-content .materials {
+	align-self: flex-start;
+}
+.main-page-content .instrument {
+	align-self: flex-start;
+}
+.main-page-content .equipment {
+	align-self: flex-end;
+}
+.main-page-content .sales {
+	align-self: flex-end;
+}*/
+/*.main-page-content .delievery {
+	align-self: center;
+}*/
+/*.main-page-content li:nth-child(4),
+.main-page-content li:last-child {
+	align-self: flex-end;
+}*/
+
+/*----------*/
+.popular-items {
+	margin-bottom: 21px;
+	min-height: 427px;
+
+	outline: 3px solid black;
+}
+.all-popular-items {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	min-height: 89px;
+}
+.all-popular-items h2 {
+	margin: 0;
+	padding: 0;
+
+	width: 262px;
+	min-height: 30px;
+}
+.all-popular-items .btn {
+	margin: 0;
+	padding: 0;
+
+	width: 253px;
+	min-height: 38px;
+}
+.catalog-list { /*Откуда берется отступ слева?*/
+	display: flex;
+	justify-content: space-between;
+
+	min-height: 318px;
+	list-style: none;
+}
+.catalog-list li {
+	margin: 0;
+	padding: 0;
+
+	min-height: 318px;
+	width: 220px;
+}
+.popular-brands {
+	margin-bottom: 85px;
+	min-height: 419px;
+
+	outline: 3px solid green;
+}
+.all-brands {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	min-height: 89px;
+	/*width: 940px;*/
+}
+.all-brands h2 {
+	margin: 0;
+	padding: 0;
+
+	width: 366px;
+	min-height: 42px;	
+}
+.all-brands .btn {
+	margin: 0;
+	padding: 0;
+
+	width: 253px;
+	min-height: 38px;
+}
+.brands-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	min-height: 310px;
+	list-style: none;
+}
+.brands-list .brand-item {
+	margin: 0;
+	padding: 0;
+
+	width: 220px;
+	min-height: 145px;
+}
+.services-list {
+	/*display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;*/
+
+	margin-bottom: 82px;
+	min-height: 522px;
+
+	outline: 3px solid red;	
+}
+.services-list-wrapper { /*Почему не тянется обертка?*/
+	width: 100%;
+	background-color: #f3f7f9;
+
+	margin-bottom: 82px;
+	min-height: 522px;
+}
+.services-descr {
+	margin: 0;
+	padding: 0;
+
+	width: 559px;
+	min-height: 153px;
+}
+.service-description {
+	display: flex;
+	justify-content: space-between;
+
+	/*flex-wrap: wrap;*/
 
 
+	margin: 0;
+	padding: 0;
+
+}
+.service-description .service-list {
+	/*align-self: flex-start;*/
+
+	margin-right: 50px;
+	padding: 0;
+
+	width: 240px;
+	min-height: 183px;	
+}
+.delievery-descr {
+	margin: 0;
+	padding: 0;
+
+	/*Как здесь правильно задавать размеры?*/
+	width: 630px;
+	min-height: 285px;
+
+}
+.guarantee-descr {
+	display: none;
+	margin: 0;
+	padding: 0;
+
+	width: 380px;
+	min-height: 190px;
+
+}
+.credit-descr {
+	display: none;
+	margin: 0;
+	padding: 0;
+
+	width: 301px;
+	min-height: 110px;	
+}
+.header-bottom {
+	display: flex;
+
+	margin-bottom: 0;
+}
+.header-bottom .container {
+	display: flex;
+	justify-content: space-between;
+}
+.about-company {
+	margin: 0;
+	padding: 0;
+
+	width: 540px;
+	min-height: 369px;
+}
+.location {
+	margin: 0;
+	padding: 0;	
+
+	width:300px;
+	min-height: 369px;
+}
+.main-footer {
+	margin-top: 86px;
+}
+.foter-top {
+	margin: 0;
+	padding: 0 0 55px 0;
+
+	min-height: 193px;
+}
+.footer-top .container {
+	display: flex;
+
+	outline: 3px solid green;	
+}
+.company-address {
+	margin: 0;
+	margin-right: 10px;
+
+	width: 380px;
+	min-height: 142px;
+}
+.footer-navigation {
+	margin: 0;
+
+	width: 561px;
+	min-height: 80px;
+}
+
+.footer-bottom {
+	margin: 0;
+	padding: 35px 0 31px 0;
+
+	min-height: 107px;
+}
+.footer-bottom .container {
+	display: flex;
+
+	outline: 3px solid yellow;	
+}
+.footer-copyright {
+	margin: 0;
+	margin-right: 150px;
+
+	width: 230px;
+	min-height: 41px;	
+}
+.footer-social {
+	margin: 0;
+	margin-right: 90px;
+
+	width: 160px;
+	min-height: 41px;	
+}
+.footer-feedback {
+
+	width: 150px;
+	min-height: 41px;	
+}
+.developer {
+	margin: 0;
+	margin-left: 20px;
+
+	width: 140px;
+	min-height: 41px;	
+}
+/*Сетка для каталога товаров*/
+
+.catalog-header {
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+
+	/* Временно для сетки */
+	min-height: 89px;
+	background-color: #f2f6f8;
+}
+.breadcrumbs {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 25px;
+
+	/* Временно для сетки */
+	min-height: 24px;
+}
+.goods-choice {
+	display: flex;
+	justify-content: space-between;
+}
+.goods-filter {
+	width: 220px;
+
+	/* Временно для сетки */
+	min-height: 748px;
+}
+.catalog {
+	width: 700px;
+
+	/* Временно для сетки */
+	min-height: 1142px;
+}
+.products-list {
+	display: flex;
+	flex-wrap: wrap;
+
+	margin: 0;
+	padding: 0;
+	margin-bottom: 52px;
+
+	width: 720px;
+	min-height: 994px;
+}
+.products-list li {/*Почему по 2 элемента в строке, 
+	если у родителя задать ширину 700?*/
+  width: 220px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+
+  /* Временно для сетки */
+  min-height: 318px;
+}
+.products-list:nth-child(3n) {
+  margin-right: 0;
+}
+.pagination-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 38px;
+}
+
+.about {/*Почему паддинги не работают?*/
+	width: 940px;
+	min-height: 261px;
+
+	margin: 0;
+	padding: 65px auto;
+
+	outline: 3px solid green;
+}
 
 
 
