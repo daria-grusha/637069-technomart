@@ -58,16 +58,21 @@ a { /*общее для всех ссылок*/
 	color: white;
 }
 /*!!!!!!!!!!!!!!!!!!!!*/
-.search, .favourites, .cart {
+.search, 
+.favourites, 
+.cart {
 	/*Форма поиска, Закладки, Корзина в наведении*/
 	background-color: #293449;
 }
 /*!!!!!!!!!!!!!!!!!!!!*/
-.search:hover, .favourites:hover, .cart:hover {
+.search:hover, 
+.favourites:hover, 
+.cart:hover {
 	/*Форма поиска, Закладки, Корзина в наведении*/
 	background-color: #212a3a;
 }
-.favourites:active, .cart:active {
+.favourites:active, 
+.cart:active {
 	/*Закладки, Корзина при клике*/
 	background-color: #161d29;
 	opacity: 0.6;
@@ -117,7 +122,8 @@ a { /*общее для всех ссылок*/
 	/*стили для входа и регистрации*/
 	list-style: none;
 }
-.sign-in-btn, .sign-up-btn {
+.sign-in-btn, 
+.sign-up-btn {
 	/*кнопки фхода в систему и регистрации в покое*/
 	font-size: 21px;
 	line-height: 21px;
@@ -125,11 +131,13 @@ a { /*общее для всех ссылок*/
 
 	background-color: white;
 }
-.sign-in-btn:hover, .sign-up-btn:hover {
+.sign-in-btn:hover, 
+.sign-up-btn:hover {
 	/*кнопки фхода в систему и регистрации при наведении*/
 	color: #ee3643;
 }
-.sign-in-btn:active, .sign-up-btn:active {
+.sign-in-btn:active, 
+.sign-up-btn:active {
 	/*кнопки фхода в систему и регистрации при клике*/
 	color: black;
 	opacity: 0.3;
@@ -253,8 +261,13 @@ a { /*общее для всех ссылок*/
 	color: white;
 	text-decoration: none;
 	text-transform: uppercase;
-
+	padding-top: 10px;
+	padding-bottom: 10px;
 	background-color: #ee3643;
+}
+.btn.button {
+	padding-left: 64px;
+	padding-right: 58px;
 }
 .btn:hover {
 	/*стили для красных кнопок при наведении*/
@@ -369,8 +382,10 @@ h2 {
 	text-transform: uppercase;
 	color: black;
 }
-.services-list p, .about-company p, 
-.location p, .inner-page .about p {
+.services-list p, 
+.about-company p, 
+.location p, 
+.inner-page .about p {
 	/*абзацы в сервисах и нижней части мэйна*/
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
@@ -422,51 +437,55 @@ h2 {
 	line-height: 20px;
 	color: black;
 }
-.main-footer {
+.footer-top {
 	/*стили для футера главной страницы*/
 	background-color: #32425c;
 }
-.main-footer .company-address .logo-btn {
+.footer-bottom {
+	background-color: #293449;
+}
+.company-address .logo-btn {
 	/*стили для кнопки Техномарт в футере*/
 	font-size: 30px;
 	line-height: 30px;
 }
-.main-footer .company-address .contacts {
+.company-address .contacts {
 	/*стили для адреса компании в футере*/
 	color: #f3f7f9;
 }
-.main-footer .footer-navigation .footer-nav1, 
+.footer-nav1, 
 .footer-nav2 {
 	/*навигация в футере стили для списков*/
 	list-style: none;
 }
-.main-footer .footer-navigation .footer-nav1 a {
+.footer-nav1 a {
 	/*навигация1 в футере стили для ссылок в покое*/
 	color: #f3f7f9;
 }
-.main-footer .footer-navigation .footer-nav1 a:hover,  
+.footer-nav1 a:hover,  
 .footer-nav2 a:hover{
 	/*навигация в футере стили для ссылок при наведении*/
 	text-decoration: underline;
 }
-.main-footer .footer-navigation .footer-nav1 a:active,  
+.footer-nav1 a:active,  
 .footer-nav2 a:active{
 	/*навигация в футере стили для ссылок при нажатии*/
 	opacity: 0.5;
 	text-decoration: none;
 }
 
-.main-footer .footer-navigation .footer-nav2 a {
+.footer-nav2 a {
 	/*навигация2 в футере стили для ссылок в покое*/
 	color: #ffd180;
 }
-.main-footer .footer-bottom .footer-copyright, 
-.footer-feedback, .developer {
+.footer-copyright, 
+.footer-feedback, 
+.developer {
 	/*стили внизу подвала*/
 	font-size: 16px;
 	line-height: 18px;
 }
-.main-footer .footer-bottom .footer-social {
+.footer-social {
 	/*Почему это правило не работает для каталога????*/
 	list-style: none;
 }
@@ -478,18 +497,18 @@ h2 {
 	background-color: #ee3643;
 }
 .main-footer .email-btn, 
-.developer-address-btn {
+.main-footer .developer-address-btn {
 	/*контакты для обратной связи в покое*/
 	text-transform: lowercase;
 	color: #ffd180;
 }
 .main-footer .email-btn:hover, 
-.developer-address-btn:hover {
+.main-footer .developer-address-btn:hover {
 	/*контакты для обратной связи при наведении*/
 	text-decoration: underline;
 }
 .main-footer .email-btn:active, 
-.developer-address-btn:active {
+.main-footer .developer-address-btn:active {
 	/*контакты для обратной связи при нажатии*/
 	color: #ee3643;
 	/*при клике ссылка становится красной, но подчеркивание остается*/
@@ -528,24 +547,30 @@ h2 {
 	display: none;
 	color: rgba(0,0,0,0.3);
 }
-.user-orders, .user-cabinet { /*ссылки Мои заказы и Личный кабинет*/
+.user-orders, 
+.user-cabinet { /*ссылки Мои заказы и Личный кабинет*/
 	color: #32425c;
 	font-size: 16px;
 	line-height: : 21px;
 	text-transform: none;
 	text-decoration: underline;
 }
-.user-orders:hover, .user-cabinet:hover { 
+.user-orders:hover, 
+.user-cabinet:hover { 
 	/*ссылки Мои заказы и Личный кабинет*/
 	color: #ee3643;
 }
-.user-orders:active, .user-cabinet:active { 
+.user-orders:active, 
+.user-cabinet:active { 
 	/*ссылки Мои заказы и Личный кабинет*/
 	color: rgba(50,66,92,0.3);
 }
 
-.breadcrumbs, .goods-filter p, 
-.sort .sort-types, .sort p, .sort-order { 
+.breadcrumbs, 
+.goods-filter p, 
+.sort .sort-types, 
+.sort p, 
+.sort-order { 
 	/*Хлебные крошки + фильтр и сортировка*/
 	list-style: none;
 	font-family: "PT Sans", "Arial", sans-serif;
@@ -559,10 +584,12 @@ h2 {
 	color: inherit;
 	text-decoration: none;
 }
-.goods-filter p, .sort p {
+.goods-filter p, 
+.sort p {
 	color: black;
 }
-.sort, .goods-filter p {
+.sort, 
+.goods-filter p {
 	background-color: #f7f3ec;
 }
 .sorting-btn.sort-type-current,
@@ -755,7 +782,6 @@ body {
 
 .header-top {
 	display:flex;
-	flex-direction: row;
 	justify-content: center;
 
 	/*margin: 0;
@@ -792,7 +818,6 @@ body {
 
 
 .header-middle { 
-	/*почему элементы не выстраиваются в ряд, а идут друг под другом?*/
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -829,24 +854,33 @@ body {
 	width: 280px;
 	min-height: 45px;
 }
+.user-navigation a {
+	display: block;
+
+	vertical-align: middle;
+}
 
 .site-navigation {
 	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	list-style: none;
-
+	flex-wrap: wrap;
+	/*width: 940px;*/
+	padding: 0;
+	margin:0;
 	min-height: 60px;
-
+	
 	outline: 3px solid red;
 }
-.site-navigation a {
+.site-navigation li { 
+/*Почему уезжает вправо навигация по сайту?*/
+	flex-grow: 1;
 	margin: 0;
 	padding: 0;
+}
+.site-navigation a {
+	display: block;
+	padding: 21px 30px;
 
-	width: 940px;
-	min-height: 60px;
+	vertical-align: middle;
 }
 
 /*.main-navigation {
@@ -872,7 +906,6 @@ body {
 /*!!!!!!!!!!!!!!!!!!!!!!*/
 .main-page-content {
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
 	/*align-items: flex-end;*/
 	justify-content: flex-end;
@@ -882,18 +915,18 @@ body {
 .main-page-content li {
 	min-height: 123px;
 	width: 300px;
+	margin: 0;
+	padding: 0;
 }
 /*.main-page-content .materials {
-	align-self: flex-start;
-}
-.main-page-content .instrument {
-	align-self: flex-start;
+	margin-right: 20px;
 }
 .main-page-content .equipment {
-	align-self: flex-end;
+	margin-left: 20px;
+	margin-bottom: 20px;
 }
 .main-page-content .sales {
-	align-self: flex-end;
+	margin-bottom: 20px;
 }*/
 /*.main-page-content .delievery {
 	align-self: center;
@@ -926,10 +959,7 @@ body {
 }
 .all-popular-items .btn {
 	margin: 0;
-	padding: 0;
-
-	width: 253px;
-	min-height: 38px;
+	padding: 10px 54px;
 }
 .catalog-list { /*Откуда берется отступ слева?*/
 	display: flex;
@@ -962,24 +992,16 @@ body {
 .all-brands h2 {
 	margin: 0;
 	padding: 0;
-
-	width: 366px;
-	min-height: 42px;	
 }
 .all-brands .btn {
 	margin: 0;
-	padding: 0;
+	padding: 10px 70px;
 
-	width: 253px;
-	min-height: 38px;
 }
 .brands-list {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-
-	min-height: 310px;
-	list-style: none;
 }
 .brands-list .brand-item {
 	margin: 0;
@@ -992,20 +1014,30 @@ body {
 	/*display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;*/
+	margin: 0;
+	padding: 0;
 
 	margin-bottom: 82px;
 	min-height: 522px;
 
 	outline: 3px solid red;	
 }
+/*!!!!!!!!!!!!!!!!!!*/
+.services-list p,
+.services-list h2,
+.services-list h3 {
+	margin:0;
+	padding:0;
+}
+/*!!!!!!!!!!!!!!!!!!*/
 .services-list-wrapper { /*Почему не тянется обертка?*/
 	width: 100%;
 	background-color: #f3f7f9;
 
 	margin-bottom: 82px;
-	min-height: 522px;
+	/*min-height: 522px;*/
 }
-.services-descr {
+.services-about {
 	margin: 0;
 	padding: 0;
 
@@ -1017,21 +1049,18 @@ body {
 	justify-content: space-between;
 
 	/*flex-wrap: wrap;*/
-
-
 	margin: 0;
 	padding: 0;
 
 }
-.service-description .service-list {
-	/*align-self: flex-start;*/
+/*.service-description .service-list {
 
 	margin-right: 50px;
 	padding: 0;
 
 	width: 240px;
 	min-height: 183px;	
-}
+}*/
 .delievery-descr {
 	margin: 0;
 	padding: 0;
@@ -1058,6 +1087,7 @@ body {
 	width: 301px;
 	min-height: 110px;	
 }
+
 .header-bottom {
 	display: flex;
 
@@ -1200,6 +1230,8 @@ body {
 
   /* Временно для сетки */
   min-height: 318px;
+
+  outline: 3px solid red;
 }
 .products-list:nth-child(3n) {
   margin-right: 0;
